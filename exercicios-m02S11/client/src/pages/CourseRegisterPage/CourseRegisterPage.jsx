@@ -32,9 +32,12 @@ function CourseRegisterPage() {
 
   useEffect(() => {
     if (!userInfo) {
+      // esling-disable-next-line react-hooks/exhaustive-deps
       navigate('/login')
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }
-  }, [userInfo])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const [content, setContent] = useState({ value: '', error: '' })
 
